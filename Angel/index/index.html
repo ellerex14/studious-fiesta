@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Letter for My Teacher 💌</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+:root{--mint:#bceee8;--mint2:#8bd9d1;--deep:#287d82;--ink:#31575b;--cream:#fffdf8;--white:#fff;--shadow:0 24px 70px rgba(35,105,110,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{min-height:100%;font-family:'DM Sans',sans-serif;color:var(--ink)}
+body{overflow-x:hidden;background:linear-gradient(135deg,#effcf9,#c9f1ed,#a5e2df)}
+.page{position:fixed;inset:0;min-height:100vh;padding:28px;display:flex;align-items:center;justify-content:center;text-align:center;opacity:0;visibility:hidden;transform:translateY(25px) scale(.98);transition:.75s ease;overflow:auto}
+.page.active{opacity:1;visibility:visible;transform:none}
+.bg-orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.45;animation:drift 7s ease-in-out infinite}.o1{width:180px;height:180px;background:#fff;left:5%;top:8%}.o2{width:250px;height:250px;background:#79d5cf;right:-70px;bottom:-60px;animation-delay:1s}.o3{width:110px;height:110px;background:#fff;right:12%;top:12%;animation-delay:2s}
+@keyframes drift{50%{transform:translateY(-20px) translateX(10px)}}
+.content{position:relative;z-index:2;width:min(900px,100%)}
+.badge{display:inline-block;padding:9px 18px;border-radius:999px;background:rgba(255,255,255,.72);color:var(--deep);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 10px 25px rgba(40,125,130,.12)}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(60px,10vw,105px);line-height:.82;color:#216d73;margin:25px 0 22px;text-shadow:0 7px 25px rgba(33,109,115,.12)}
+.subtitle{max-width:620px;margin:auto;font-size:17px;line-height:1.8;color:#426c70}
+.main-btn,.small-btn{border:0;cursor:pointer;font-family:inherit;font-weight:700;transition:.3s}
+.main-btn{margin-top:30px;padding:15px 28px;border-radius:999px;color:#fff;background:linear-gradient(135deg,#287d82,#63c9bf);box-shadow:0 14px 30px rgba(40,125,130,.25)}
+.main-btn:hover,.small-btn:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(40,125,130,.25)}
+.float{position:absolute;font-size:26px;animation:float 5s ease-in-out infinite;z-index:1}.f1{left:8%;top:20%}.f2{right:12%;top:25%;animation-delay:1s}.f3{left:15%;bottom:18%;animation-delay:2s}.f4{right:10%;bottom:14%;animation-delay:3s}@keyframes float{50%{transform:translateY(-18px) rotate(8deg)}}
+#page2{background:linear-gradient(135deg,#e9fbf8,#bdece7,#a3ddd9)}
+.letter-card{width:min(900px,96vw);max-height:90vh;overflow:auto;background:rgba(255,255,255,.82);border:1px solid rgba(255,255,255,.9);border-radius:32px;padding:34px;box-shadow:var(--shadow);backdrop-filter:blur(18px);text-align:left;position:relative}
+.letter-top{display:flex;gap:28px;align-items:center;margin-bottom:24px}.photo-wrap{width:190px;min-width:190px;height:220px;border-radius:24px;padding:7px;background:linear-gradient(145deg,#fff,#8bd9d1);box-shadow:0 15px 35px rgba(40,125,130,.16);position:relative;overflow:hidden}.photo-wrap img{width:100%;height:100%;object-fit:cover;border-radius:18px;display:none}.photo-placeholder{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#4e8588;background:#e7faf7;border-radius:18px;padding:15px}.photo-placeholder span{font-size:46px;margin-bottom:8px}.photo-placeholder small{font-size:12px;line-height:1.5}.upload{margin-top:10px;display:inline-block;padding:8px 12px;border-radius:999px;background:#fff;color:var(--deep);font-size:12px;font-weight:700;cursor:pointer}.upload input{display:none}.eyebrow{color:#4c9294;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.14em}.letter-title{font-family:'Cormorant Garamond',serif;font-size:clamp(42px,6vw,68px);line-height:.95;color:#216d73;margin:8px 0 10px}.script{font-family:'Great Vibes',cursive;font-size:30px;color:#4ca5a1}.letter-body{background:#fffdf8;border-radius:24px;padding:28px 30px;border:1px solid #e3f4f0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.6)}.letter-body p{font-family:'Cormorant Garamond',serif;font-size:22px;line-height:1.65;color:#405c5f;margin-bottom:15px}.signature{font-family:'Great Vibes',cursive;font-size:38px;color:#287d82;margin-top:10px}.choice-buttons{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}.small-btn{padding:10px 16px;border-radius:999px;background:#e5f8f5;color:#287d82;border:1px solid #b6e7e1}.reveal-area{min-height:60px}.reveal{display:none;padding:15px 18px;background:#d9f5f0;border-left:4px solid #65c9bf;border-radius:14px;line-height:1.7;animation:show .45s ease}.reveal.show{display:block}@keyframes show{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.back{position:fixed;bottom:22px;left:22px;border:0;background:rgba(255,255,255,.75);color:var(--deep);padding:10px 16px;border-radius:999px;cursor:pointer;font-weight:700}
+#page3{background:linear-gradient(135deg,#84d6d0,#4da9aa,#287d82);color:#fff}.final-title{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,8vw,86px);line-height:.9}.final-subtitle{font-size:17px;line-height:1.7;margin:20px auto;max-width:600px}.gift{width:120px;height:105px;margin:25px auto;position:relative;cursor:pointer;filter:drop-shadow(0 18px 25px rgba(0,0,0,.18));transition:.3s}.gift:hover{transform:translateY(-7px) rotate(-2deg)}.gift-box{position:absolute;left:10px;right:10px;bottom:0;height:75px;border-radius:10px;background:linear-gradient(135deg,#f5fffd,#b7eee8);border:3px solid rgba(255,255,255,.75)}.gift-box:after{content:'';position:absolute;left:50%;top:0;bottom:0;width:18px;transform:translateX(-50%);background:#4da9aa}.gift-lid{position:absolute;z-index:2;left:3px;right:3px;top:15px;height:28px;border-radius:8px;background:#eafff9;border:3px solid rgba(255,255,255,.8);transition:.5s}.gift-lid:after{content:'';position:absolute;left:50%;top:-15px;width:18px;height:72px;transform:translateX(-50%);background:#4da9aa;border-radius:5px}.gift.open .gift-lid{transform:translateY(-55px) rotate(-8deg)}.final-message{opacity:0;transform:translateY(15px);transition:.7s}.final-message.show{opacity:1;transform:none}.final-message h2{font-family:'Cormorant Garamond',serif;font-size:42px}.confetti{position:fixed;top:-20px;width:9px;height:14px;z-index:10;animation:fall 3.5s linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:650px){.page{padding:18px}.letter-card{padding:20px}.letter-top{flex-direction:column;text-align:center}.photo-wrap{width:170px;min-width:170px;height:195px}.letter-body{padding:22px}.letter-body p{font-size:20px}.back{bottom:12px;left:12px}.choice-buttons{justify-content:center}}
+img{
+    float: left;
+    height: 170px;
+}
+</style>
+</head>
+<body>
+<section class="page active" id="page1">
+<div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div>
+<span class="float f1">🌿</span><span class="float f2">✨</span><span class="float f3">🩵</span><span class="float f4">🌸</span>
+<div class="content">
+<div class="badge">A little letter of appreciation 💌</div>
+<h1>Dear<br>Teacher</h1>
+<p class="subtitle">A small digital letter for the person who teaches, guides, encourages, and inspires us every day.</p>
+<button class="main-btn" onclick="goToPage(2)">Open My Letter ✉️</button>
+</div></section>
+
+<section class="page" id="page2">
+<div class="letter-card">
+<div class="letter-top">
+<div>
+<img src="sir_randy.jpg" alt="Teacher photo">
+</div>
+<div><div class="eyebrow">For my poging teacher</div><div class="letter-title">Thank You,sir</div><div class="script">with gratitude 🩵</div></div>
+</div>
+<div class="letter-body">
+<p>Dear Sir Randy,</p>
+<p>First of all I want to greet you a happy happy teachers day po.Thank you for your patience, kindness, and guidance.Thank you so much sir for making this college journey very enjoyable,Thanks a lot sa imo mga scam HAHAHAHAHA.Then thank you po sir sa imo po mga testimony na very nakakahatag sa amon san strength and motivation na magpadayun even though nakabuang na magcode and pag adalan an mundo san technology.</p>
+<p>Thank you sir kay never mo gin pafeel sa amon na maluya kami,instead mas gina encourage mo pa kami.You make the classroom a place where we can ask questions, make mistakes, improve, and believe that we can do better. Your effort may seem like a small part of an ordinary school day, but it can leave a lasting memory in a student's life.</p>
+<p>I truly appreciate everything you do for us. Thank you for believing in your students and for making learning more meaningful.</p>
+<p>May you always remember that your hard work matters and that your lessons reach farther than the classroom.Thank you so much sir for everything the simpling "kaya pa?kaya nyo yan kayo pa make us feel na kaya namin because our instructor trust on us </p>
+<p>With sincere gratitude,</p><div class="signature">Your Student ♡</div>
+</div>
+<div class="choice-buttons"><button class="small-btn" onclick="reveal('lesson')">📚 A Lesson</button><button class="small-btn" onclick="reveal('thanks')">💙 A Thank You</button><button class="small-btn" onclick="reveal('wish')">🌷 A Wish</button></div>
+<div class="reveal-area"><div id="lesson" class="reveal">“The lessons we remember most are not always written on the board—they are the ones that help us grow.”</div><div id="thanks" class="reveal">Thank you for being patient with us, cheering us on, and helping us become better students and better people. 🩵</div><div id="wish" class="reveal">I hope you continue inspiring many more students and receive the same kindness and respect that you give every day.</div></div>
+<button class="main-btn" onclick="goToPage(3)">Open One More Surprise →</button>
+</div><button class="back" onclick="goToPage(1)">← Back</button></section>
+
+<section class="page" id="page3"><div class="content"><div class="final-title">You Teach.<br>You Inspire.<br>You Matter.</div><p class="final-subtitle">There is one last little surprise. Click the gift. 🎁</p><div class="gift" id="gift" onclick="openGift()"><div class="gift-lid"></div><div class="gift-box"></div></div><div class="final-message" id="finalMessage"><h2>Happy Teachers' Day! 🩵</h2><p>Thank you for making a difference in our lives.</p></div></div><button class="back" onclick="goToPage(2)">← Back</button></section>
+<script>
+function goToPage(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page'+n).classList.add('active');window.scrollTo(0,0)}
+function reveal(id){document.querySelectorAll('.reveal').forEach(x=>x.classList.remove('show'));document.getElementById(id).classList.add('show')}
+function loadPhoto(e){const file=e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=function(ev){const img=document.getElementById('teacherPhoto');img.src=ev.target.result;img.style.display='block';document.getElementById('photoPlaceholder').style.display='none'};reader.readAsDataURL(file)}
+function openGift(){const g=document.getElementById('gift');if(g.classList.contains('open'))return;g.classList.add('open');setTimeout(()=>document.getElementById('finalMessage').classList.add('show'),500);confetti()}
+function confetti(){const colors=['#ffffff','#bceee8','#f4d58d','#d9f5f0','#63c9bf'];for(let i=0;i<90;i++){const c=document.createElement('div');c.className='confetti';c.style.left=Math.random()*100+'vw';c.style.background=colors[Math.floor(Math.random()*colors.length)];c.style.animationDuration=2+Math.random()*2+'s';c.style.animationDelay=Math.random()*.6+'s';document.body.appendChild(c);setTimeout(()=>c.remove(),4500)}}
+</script>
+</body></html>
